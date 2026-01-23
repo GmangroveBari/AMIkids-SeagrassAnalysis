@@ -1,0 +1,13 @@
+on: [push] # Trigger the action on a push event
+
+jobs:
+  run-r-code:
+    runs-on: ubuntu-latest # Use a virtual machine with the latest Ubuntu OS
+    steps:
+      - uses: actions/checkout@v4 # Check out your repository
+      - uses: r-lib/actions/setup-r@v2 # Set up R environment
+      - name: Install dependencies
+        run: install.packages(c("readxl", "dplyr", "ggplot2", "tidyverse", "jsonlite", "lubridate", "tbeptools")) # Install any required R packages
+        shell: Rscript {0}
+      - name: Run R script
+        run: Rscript your_script_name.R # Command to execute your R script
