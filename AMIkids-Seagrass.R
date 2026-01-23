@@ -13,7 +13,7 @@ library(lubridate)
 library(tbeptools)
 
 # get and read training data
-seagrass <- read_xlsx("C:/Users/gmang/Documents/Gman/Ecology/AMIkids/DataWranglingAMIkids/SeagrassDataOct2025-AMIkids.xlsx")
+seagrass <- read_xlsx("SeagrassDataOct2025-AMIkids.xlsx")
 
 
 # learning about raw data
