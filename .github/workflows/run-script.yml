@@ -10,4 +10,4 @@ jobs:
         run: install.packages(c("readxl", "dplyr", "ggplot2", "tidyverse", "jsonlite", "lubridate", "tbeptools")) # Install any required R packages
         shell: Rscript {0}
       - name: Run R script
-        run: Rscript your_script_name.R # Command to execute your R script
+        run: Rscript AMIkids-Seagrass.R # Command to execute your R script
